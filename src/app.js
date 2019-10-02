@@ -27,7 +27,7 @@ class App extends React.Component {
   }
  
   addItem = (string) => {
-    this.state.people.push(string);
+    this.state.people.push({name:string});
     this.setState({people:this.state.people})
   }
 
